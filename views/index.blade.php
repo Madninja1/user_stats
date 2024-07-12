@@ -20,13 +20,13 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($userStats)
+            @foreach($userStats as $userStat)
                 <tr>
                     <td>
-                        {{ $userStats->user->name }}
+                        {{ $userStat->user->name }}
                     </td>
                     <td>
-                        {{ $userStats->last_login }}
+                        {{ $userStat->last_login }}
                     </td>
                 </tr>
             @endforeach
