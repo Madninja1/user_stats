@@ -18,4 +18,9 @@ class Entry extends Model
         parent::__construct();
         $this->table = config('es_stats.db_prefix') . config('es_stats.entries_table');
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
