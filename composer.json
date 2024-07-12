@@ -1,0 +1,32 @@
+{
+    "name": "enzosharp/user_stats",
+    "description": "Get user stats for week/month/year",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Enzosharp\\UserStats\\": "src/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Database\\Factories\\": "database/factories/",
+            "App\\Models\\": "src/Models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mukhamedshin Daniil",
+            "email": "danilec1403@mail.ru"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^11.9",
+        "illuminate/routing": "^11.9",
+        "illuminate/database": "^11.9",
+        "illuminate/http": "^11.9"
+    },
+    "extra" : {
+        "laravel": {
+            "providers": [
+                "Enzosharp\\UserStats\\ServiceProvider"
+            ]
+        }
+    }
+}
