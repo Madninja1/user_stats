@@ -17,6 +17,7 @@
         }
     ],
     "require": {
+        "php": "^8.2",
         "illuminate/support": "^11.9",
         "illuminate/routing": "^11.9",
         "illuminate/database": "^11.9",
